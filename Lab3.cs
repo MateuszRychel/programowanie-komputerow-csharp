@@ -1,4 +1,4 @@
-namespace Cwiczenia1
+namespace Lab3
 {
     internal class Program
     {

@@ -53,7 +53,7 @@ namespace Lab6
             Console.WriteLine("Suma: {0}", suma);
 
 
-            // 6.3
+            // Zadanie 6.3
             Random rand = new Random();
             int[,] tablica = new int[5, 5];
             Console.WriteLine("Macierz 5x5: ");
@@ -128,7 +128,7 @@ namespace Lab6
                 Console.WriteLine();
 
 
-            // 6.5
+            // Zadanie 6.5
             string[][] towary =
             {
                 new string [] { "jabłka", "pomarańcze", "banany", "brzoskwinie" },

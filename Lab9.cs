@@ -22,3 +22,19 @@ switch (przekroczenie_predkosci)
 }
 Koniec:
     Console.WriteLine("Koniec programu");
+
+
+// Zadanie 9.2
+Console.WriteLine("Program obliczający przyszłą wartość lokaty bankowej");
+Console.WriteLine("Podaj kwotę początkową: ");
+double kwota_poczatkowa = Convert.ToDouble(Console.ReadLine());
+Console.WriteLine("Podaj liczbę lat: ");
+int lata = Convert.ToInt32(Console.ReadLine());
+double oprocentowanie = 0.011;
+int kapitalizacja = 12;
+
+for (int i = 1; i <= lata; i++)
+{
+    double wartosc_po_roku = kwota_poczatkowa * Math.Pow(1 + oprocentowanie / kapitalizacja, kapitalizacja * i);
+    Console.WriteLine($"Wartość lokaty po {i} roku wynosi: {wartosc_po_roku:F2} zł");
+}

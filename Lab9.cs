@@ -87,3 +87,36 @@ foreach (int element in tablica)
 {
     Console.Write(element + " ");
 }
+
+
+// Zadanie 9.4
+Console.WriteLine("Podaj tekst: ");
+string tekst = Console.ReadLine();
+Console.WriteLine("Podaj drugi tekst: ");
+string tekst2 = Console.ReadLine();
+
+string nowy_tekst = tekst + " " + tekst2;
+
+Console.WriteLine("Podaj miejsce dodania elementu w tekście: ");
+int miejsce_dodania_elementu = Convert.ToInt32(Console.ReadLine());
+string nowy_teskt2 = Console.ReadLine();
+string tekst3 = tekst.Insert(miejsce_dodania_elementu, nowy_teskt2);
+Console.WriteLine(tekst3);
+
+bool result = tekst == tekst.ToLower();
+bool result2 = tekst == tekst.ToUpper();
+Console.WriteLine($"Czy tekst jest napisany małymi literami? {result}");
+Console.WriteLine($"Czy tekst jest napisany wielkimi literami? {result2}");
+if (tekst == tekst2)
+{
+    Console.WriteLine($"Teksty są równe");
+}
+else
+{
+    Console.WriteLine($"Teksty są różne");
+}
+nowy_tekst = nowy_tekst.ToUpper();
+Console.WriteLine(nowy_tekst);
+
+nowy_tekst = new string(nowy_tekst.Reverse().ToArray());
+Console.WriteLine(nowy_tekst);
